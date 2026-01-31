@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head> 
+<body>
+    <div>
+        <div>
+            <!-- Sign Up Form -->
+            <div id="signupForm">
+                <h2>Create Account</h2>
+                <form id="signup">
+                    <div>
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div>
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div>
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div>
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </form>
+            </div>
+
+            <!-- Login Form -->
+            <div id="loginForm">
+                <h2>Welcome Back</h2>
+                <form id="login">
+                    <div>
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div>
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox" id="remember"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p class="toggle-text">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+                </form>
+            </div>
+
+            <!-- Success Message -->
+            <div class="form-box hidden" id="successMessage">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h2>Welcome!</h2>
+                    <p id="welcomeText"></p>
+                    <button class="btn" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
